@@ -1,0 +1,28 @@
+{
+  "physicalAI": [
+    "intro",
+    {
+      "type": "category",
+      "label": "Part 1: Foundations",
+      "items": [
+        "module1",
+        "module2",
+        "module3",
+        "module4",
+        "module5"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Part 2: Humanoid Robotics & Advanced Topics",
+      "items": [
+        "module6",
+        "module7",
+        "module8",
+        "module9",
+        "module10"
+      ]
+    },
+    "glossary"
+  ]
+}

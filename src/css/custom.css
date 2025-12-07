@@ -1,0 +1,160 @@
+/**
+ * Any CSS you add here will be applied to all pages of your Docusaurus site.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #007bff;
+  --ifm-color-primary-dark: #0056b3;
+  --ifm-color-primary-darker: #004e9c;
+  --ifm-color-primary-darkest: #004285;
+  --ifm-color-primary-light: #0087ff;
+  --ifm-color-primary-lighter: #0093ff;
+  --ifm-color-primary-lightest: #00a4ff;
+
+  --ifm-color-secondary: #6c757d;
+  --ifm-color-secondary-dark: #343a40; /* Using dark version for a slightly stronger secondary */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For a dark theme, you might want to adjust these variables */
+[data-theme='dark'] {
+  --ifm-color-primary: #0056b3; /* Darker primary for dark mode */
+  --ifm-color-primary-dark: #007bff; /* Lighter primary for dark mode */
+  --ifm-color-primary-darker: #0087ff;
+  --ifm-color-primary-darkest: #0093ff;
+  --ifm-color-primary-light: #004285;
+  --ifm-color-primary-lighter: #004e9c;
+  --ifm-color-primary-lightest: #0056b3;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Customizations to move away from default Docusaurus look */
+
+/* Adjust font sizes and families for a more book-like feel */
+html {
+  font-size: 100%; /* Base font size */
+}
+
+body {
+  font-family: 'Georgia', serif; /* A more traditional book font */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean sans-serif for headings */
+  font-weight: 600;
+  color: var(--ifm-color-primary-dark); /* Headings in a primary color shade */
+}
+
+/* Navbar customizations */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,.08); /* Subtle shadow for depth */
+  padding: 0.5rem 0;
+  background-color: var(--ifm-background-color); /* Use background color for navbar */
+}
+
+.navbar__brand {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary-darkest);
+}
+
+/* Footer customizations */
+.footer {
+  background-color: var(--ifm-color-secondary-dark); /* Darker secondary for footer */
+  padding: 2rem 0;
+}
+
+.footer__title {
+  color: #fff; /* White titles for dark footer */
+}
+
+.footer__item a {
+  color: rgba(255, 255, 255, 0.8); /* Lighter links */
+}
+
+.footer__item a:hover {
+  color: var(--ifm-color-primary-light); /* Primary hover color */
+}
+
+/* Doc content area */
+.main-wrapper {
+  padding-top: var(--ifm-spacing-vertical);
+  padding-bottom: var(--ifm-spacing-vertical);
+  background-color: var(--ifm-background-color);
+}
+
+/* Adjust sidebar appearance for a more integrated look */
+.theme-doc-sidebar-container {
+  background-color: var(--ifm-background-surface-color); /* Slightly different background for sidebar */
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.menu__link--active {
+  color: var(--ifm-color-primary) !important; /* Active sidebar link color */
+  background-color: var(--ifm-color-primary-lightest) !important;
+  border-left: 3px solid var(--ifm-color-primary) !important;
+}
+
+.menu__link:hover {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Custom styling for images within content */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for images */
+}
+
+/* Enhance code blocks for readability */
+.theme-code-block {
+  border-left: 5px solid var(--ifm-color-primary-light);
+  border-radius: var(--ifm-border-radius);
+  box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+/* Add some padding to the content area */
+.docMainContainer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 996px) {
+  .docMainContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Homepage specific styles if needed - currently not used as book content is main focus */
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary-darkest);
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-font-color-base);
+}
+
+.hero__button {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: var(--ifm-button-border-radius);
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.hero__button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
